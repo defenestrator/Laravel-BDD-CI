@@ -20,16 +20,17 @@ then added the Laravel installer to your global composer requirements:
 
 #### Or
 Assuming you have a github account and a [Travis-CI](https://travis-ci.org) account linked to it:
-- install Laravel ~5.0.1
-- save a decent `.gitignore` file like 
-[this one](https://gist.github.com/defenestrator/5ad679db122177888da5) to the root of your project
+- install Laravel ~5.0.1 `laravel new blog`
+- `cd blog`
+- create a decent `.gitignore` file like 
+[this one](https://gist.github.com/defenestrator/5ad679db122177888da5) to replace the minimal one in the project root. 
 
 In terminal:
 - `git init`
 - `mv .env.example .env`
 - `php artisan key:generate`
 - `touch behat.yml .travis.yml .env.behat.travis`
-- edit `composer.json` to add `"minimum-stability": "dev"` right before the closing brace
+- edit `composer.json` to add `"minimum-stability": "dev"` right before the closing brace.
 
 Additionally edit your `"require-dev":` to look like this:
 ```json
@@ -46,7 +47,6 @@ Additionally edit your `"require-dev":` to look like this:
 
 Again in terminal:    
 - `composer install`
-- `php artisan vendor:publish` - just in case
 - `vendor/bin/behat --init`
 - `git add .`
 
