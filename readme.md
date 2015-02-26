@@ -20,12 +20,12 @@ then added the Laravel installer to your global composer requirements:
 
 #### Or
 Assuming you have a github account and a [Travis-CI](https://travis-ci.org) account linked to it:
+
+In terminal:
 - install Laravel ~5.0.1 `laravel new blog`
 - `cd blog`
 - create a decent `.gitignore` file like 
-[this one](https://gist.github.com/defenestrator/5ad679db122177888da5) to replace the minimal one in the project root. 
-
-In terminal:
+[this one](https://gist.github.com/defenestrator/5ad679db122177888da5) to replace the minimal one in the project root.
 - `git init`
 - `mv .env.example .env`
 - `php artisan key:generate`
