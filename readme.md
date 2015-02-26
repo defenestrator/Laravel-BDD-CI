@@ -1,16 +1,18 @@
-# Laravel-BDD-CI with Behat, PhpSpec and Travis-CI
+# Laravel-BDD-CI featuring Behat, and Travis-CI
 
 [![Build Status](https://travis-ci.org/defenestrator/Laravel-BDD-CI.svg?branch=master)](https://travis-ci.org/defenestrator/Laravel-BDD-CI)
 
 A starter kit for Laravel 5 BDD with support for Travis-CI 
 
-Assuming you have PHP >=5.4, 
-and have installed Composer:
+Assuming you have PHP >=5.4, and have installed Composer:
+
 `curl -sS https://getcomposer.org/installer | php`
 
-and added the Laravel installer to your global composer requirements:
+then added the Laravel installer to your global composer requirements:
+
 `composer global require "laravel/installer=~1.1"`
-...
+
+...breathe deep and proceed
 
 ### How to build it
 #### Either
