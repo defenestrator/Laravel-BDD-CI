@@ -14,7 +14,6 @@ In terminal:
 - `mv .env.example .env`
 - `php artisan key:generate`
 - `touch behat.yml .travis.yml .env.behat.travis`
-- `git add .`
 - edit `composer.json` to add `"minimum-stability": "dev"` right before the closing brace
 Additionally edit your `"require-dev":` to look like this:
 ```json
@@ -33,7 +32,8 @@ Again in terminal
 - `composer install`
 - `php artisan vendor:publish` - just in case
 - `vendor/bin/behat --init`
-- edit config/database.php so 
+- `git add .`
+Then edit config/database.php so that
   - `'default' => 'mysql',` 
     - says `'default' => env('DB_TYPE', 'sqlite')`
   - and `'database' => storage_path().'/database.sqlite',`
