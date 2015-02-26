@@ -22,10 +22,6 @@ Now...breathe deep and proceed.
 
 #### Either
 
-- clone this repo
-
-#### Or
-
 In terminal:
 - install Laravel ~5.0.1 `laravel new blog`
 - `cd blog`
@@ -119,6 +115,9 @@ Back in terminal, run:
 - `git remote add origin https://github.com/your-username/repo-name.git`
 - `git commit -m "initial commit"`
 - `git push -u origin master`
+
+#### Or
+- clone this repo
 
 #### Go to [Travis-CI](https://travis-ci.org), synch your repositories, and turn this one on!
 
