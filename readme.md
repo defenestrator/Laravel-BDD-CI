@@ -2,24 +2,29 @@
 
 [![Build Status](https://travis-ci.org/defenestrator/Laravel-BDD-CI.svg?branch=master)](https://travis-ci.org/defenestrator/Laravel-BDD-CI)
 
-A starter kit for Laravel 5 BDD with support for Travis-CI 
+**A starter kit for Laravel 5 BDD with support for Travis-CI** 
 
-Assuming you have PHP >=5.4, and have installed Composer:
+I'm assuming you have a github account and a [Travis-CI](https://travis-ci.org) account linked to it:
+
+Given that, it is safe to assume you have PHP 5.4 or higher, and know more or less how to configure your local development environment, and have installed Composer:
 
 `curl -sS https://getcomposer.org/installer | php`
 
-then added the Laravel installer to your global composer requirements:
+...then added the Laravel installer to your global composer requirements:
 
 `composer global require "laravel/installer=~1.1"`
 
-...breathe deep and proceed
+**I recommend [Laravel Homestead](http://laravel.com/docs/5.0/homestead) for local use with this configuration.**
+
+Now...breathe deep and proceed.
 
 ### How to build it
+
 #### Either
+
 - clone this repo
 
 #### Or
-Assuming you have a github account and a [Travis-CI](https://travis-ci.org) account linked to it:
 
 In terminal:
 - install Laravel ~5.0.1 `laravel new blog`
