@@ -30,17 +30,18 @@ Additionally edit your `"require-dev":` to look like this:
   },
   ```
 
-Again in terminal    
+Again in terminal:    
 - `composer install`
 - `php artisan vendor:publish` - just in case
 - `vendor/bin/behat --init`
 - `git add .`
 
-Then edit config/database.php so that
+Then edit config/database.php so that:
   - `'default' => 'mysql',` 
     - says `'default' => env('DB_TYPE', 'sqlite')`
   - and `'database' => storage_path().'/database.sqlite',`
     - becomes `'database' => storage_path(env('SQLITE_DB', 'database.sqlite')),`
+    
 - add `DB_TYPE=mysql` to `.env`
 - `.env.behat` will be excluded from git, and you should add:
 
@@ -57,7 +58,7 @@ SESSION_DRIVER=file
 
 - `.env.behat.travis` will be included in git, and should have identical contents to `.env.behat`
 
-- add this to your behat.yml
+- add this to your behat.yml:
 
 ```yaml
 default:
