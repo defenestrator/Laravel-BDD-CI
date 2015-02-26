@@ -3,11 +3,12 @@ A starter kit for Laravel 5 BDD with support for Travis-CI
 ### How to build it
 #### Either
 - clone this repo
+
 #### Or
-Assuming you have a github account and a (https://travis-ci.org)[Travis-CI] account linked to it:
+Assuming you have a github account and a [Travis-CI](https://travis-ci.org) account linked to it:
 - install Laravel ~5.0.1
 - save a decent `.gitignore` file like 
-(https://gist.github.com/defenestrator/5ad679db122177888da5)[this one] to the root of your project
+[this one](https://gist.github.com/defenestrator/5ad679db122177888da5) to the root of your project
 In terminal:
 - `git init`
 - `mv .env.example .env`
@@ -96,6 +97,6 @@ Back in terminal, run:
 - `git commit -m "initial commit"`
 - `git push -u origin master`
 
-#### Go to travis-ci.org, synch your repositories, and turn this one on!
+#### Go to [Travis-CI](https://travis-ci.org), synch your repositories, and turn this one on!
 
 
