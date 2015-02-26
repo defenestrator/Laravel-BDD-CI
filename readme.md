@@ -29,7 +29,7 @@ In terminal:
 - `git init`
 - `mv .env.example .env`
 - `php artisan key:generate`
-- `touch behat.yml .travis.yml .env.behat.travis`
+- `touch behat.yml .travis.yml .env.behat`
 - edit `composer.json` to add `"minimum-stability": "dev"` right before the closing brace.
 
 Additionally edit your `"require-dev":` to look like this:
@@ -67,8 +67,8 @@ CACHE_DRIVER=file
 SESSION_DRIVER=file
 ```
 
-- `.env.behat.travis` will be included in git, and should have identical contents to `.env.behat`
-
+Terminal:
+- `cp .env.behat .env.behat.travis`
 - add this to your behat.yml:
 
 ```yaml
@@ -80,7 +80,7 @@ default:
       laravel: ~
 ```
 
-- Finally, edit .travis.yml to read:
+- Finally, edit `.travis.yml` to read:
 
 ```yaml
 language: php
