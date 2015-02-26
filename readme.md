@@ -38,11 +38,8 @@ Again in terminal:
 - `git add .`
 
 Then edit config/database.php so that:
-  - `'default' => 'mysql',` 
-    - says `'default' => env('DB_TYPE', 'sqlite')`
-  - and `'database' => storage_path().'/database.sqlite',`
-    - becomes `'database' => storage_path(env('SQLITE_DB', 'database.sqlite')),`
-    
+- `'default' => 'mysql',` becomes `'default' => env('DB_TYPE', 'sqlite')`
+- and `'database' => storage_path().'/database.sqlite',` says `'database' => storage_path(env('SQLITE_DB', 'database.sqlite')),`
 - add `DB_TYPE=mysql` to `.env`
 - `.env.behat` will be excluded from git, and you should add:
 
