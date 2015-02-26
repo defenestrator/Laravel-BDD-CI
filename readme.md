@@ -1,4 +1,4 @@
-# Laravel-BDD-CI featuring Behat, and Travis-CI
+# Laravel-BDD-CI featuring Behat and Travis-CI
 
 [![Build Status](https://travis-ci.org/defenestrator/Laravel-BDD-CI.svg?branch=master)](https://travis-ci.org/defenestrator/Laravel-BDD-CI)
 
