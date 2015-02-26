@@ -4,7 +4,7 @@
 
 **A starter kit for Laravel 5 BDD with support for Travis-CI** 
 
-I'm assuming you have a github account and a [Travis-CI](https://travis-ci.org) account linked to it:
+I'm assuming you have a github account and a [Travis-CI](https://travis-ci.org) account linked to it.
 
 Given that, it is safe to assume you have PHP 5.4 or higher, and know more or less how to configure your local development environment, and have installed Composer:
 
