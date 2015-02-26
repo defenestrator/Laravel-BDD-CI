@@ -13,8 +13,8 @@ In terminal:
 - `php artisan key:generate`
 - `touch behat.yml .travis.yml .env.behat.travis`
 - `git add .`
-- edit `composer.json` to change `"minimum-stability":` to `"dev"`
-And your `"require-dev":` should look like this:
+- edit `composer.json` to add `"minimum-stability": "dev"` right before the closing brace
+Additionally edit your `"require-dev":` to look like this:
 ```json
 "require-dev": {
     "phpunit/phpunit": "~4.4.5",
@@ -36,3 +36,36 @@ Again in terminal
   - and `'database' => storage_path().'/database.sqlite',`
     - becomes `'database' => storage_path(env('SQLITE_DB', 'database.sqlite')),`
 - add `DB_TYPE=mysql` to `.env`
+- `.env.behat` will be excluded from git, and should read:
+```
+APP_ENV=acceptance
+APP_DEBUG=true
+DB_TYPE=sqlite
+SQLITE_DB=acceptance.sqlite
+
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+```
+
+- `.env.behat.travis` will be included in git, and should read:
+```
+APP_ENV=acceptance
+APP_DEBUG=true
+
+DB_TYPE=sqlite
+SQLITE_DB=acceptance.sqlite
+
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+```
+
+- add this to your behat.yml
+```
+default:
+  extensions:
+    Laracasts\Behat\ServiceContainer\BehatExtension: ~
+    Behat\MinkExtension\ServiceContainer\MinkExtension:
+      default_session: laravel
+      laravel: ~
+```
+
