@@ -1,5 +1,6 @@
 # defenestrator/Laravel-BDD-CI
 A starter kit for Laravel 5 BDD with support for Travis-CI 
+[![Build Status](https://travis-ci.org/defenestrator/Laravel-BDD-CI.svg?branch=master)](https://travis-ci.org/defenestrator/Laravel-BDD-CI)
 ### How to build it
 #### Either
 - clone this repo
