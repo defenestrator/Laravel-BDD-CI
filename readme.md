@@ -4,6 +4,7 @@ A starter kit for Laravel 5 BDD with support for Travis-CI
 #### Either
 - clone this repo
 #### Or
+Assuming you have a github account and a (https://travis-ci.org)[Travis-CI] account linked to it:
 - install Laravel ~5.0.1
 - save a decent `.gitignore` file like 
 (https://gist.github.com/defenestrator/5ad679db122177888da5)[this one] to the root of your project
@@ -99,4 +100,12 @@ script:
   - vendor/bin/behat --config behat.yml
 ```
 
+Back in terminal, run:
+- `git remote add origin https://github.com/your-username/repo-name.git`
+- `git commit -m "initial commit"`
+- `git push -u origin master`
+
+Go to travis-ci.org, synch your repositories, and turn this one on!
+
+### Next up: How to BDD!
 
