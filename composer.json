@@ -1,15 +1,20 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "defenestrator/laravel-bdd-ci",
+	"description": "BDD with Laravel 5 + CI",
+	"keywords": ["scaffold", "framework", "laravel", "bdd"],
 	"license": "MIT",
 	"type": "project",
 	"require": {
 		"laravel/framework": "5.0.*"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "~4.0",
-		"phpspec/phpspec": "~2.1"
+      "phpunit/phpunit": "~4.4.5",
+      "phpspec/phpspec": "~2.1",
+      "behat/behat": "~3.0@dev",
+      "behat/mink": "~1.7@dev",
+      "behat/mink-extension": "~2.0@dev",
+      "laracasts/behat-laravel-extension": "dev-master#205a3d2",
+      "laracasts/testdummy": "dev-master#44807c5"
 	},
 	"autoload": {
 		"classmap": [
