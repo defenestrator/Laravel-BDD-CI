@@ -30,25 +30,15 @@ Additionally edit your `"require-dev":` to look like this:
 
 Again in terminal    
 - `composer install`
-- `php artisan vendor:publish`
+- `php artisan vendor:publish` - just in case
+- `vendor/bin/behat --init`
 - edit config/database.php so 
   - `'default' => 'mysql',` 
     - says `'default' => env('DB_TYPE', 'sqlite')`
   - and `'database' => storage_path().'/database.sqlite',`
     - becomes `'database' => storage_path(env('SQLITE_DB', 'database.sqlite')),`
 - add `DB_TYPE=mysql` to `.env`
-- `.env.behat` will be excluded from git, and should read:
-```
-APP_ENV=acceptance
-APP_DEBUG=true
-DB_TYPE=sqlite
-SQLITE_DB=acceptance.sqlite
-
-CACHE_DRIVER=file
-SESSION_DRIVER=file
-```
-
-- `.env.behat.travis` will be included in git, and should read:
+- `.env.behat` will be excluded from git, and you should add:
 ```
 APP_ENV=acceptance
 APP_DEBUG=true
@@ -59,9 +49,11 @@ SQLITE_DB=acceptance.sqlite
 CACHE_DRIVER=file
 SESSION_DRIVER=file
 ```
+
+- `.env.behat.travis` will be included in git, and should have identical contents to `.env.behat`
 
 - add this to your behat.yml
-```
+```yaml
 default:
   extensions:
     Laracasts\Behat\ServiceContainer\BehatExtension: ~
@@ -70,9 +62,9 @@ default:
       laravel: ~
 ```
 
-- finally, edit .travis.yml to read:
+- Finally, edit .travis.yml to read:
 
-``` yaml
+```yaml
 language: php
 php:
   - 5.6
@@ -91,7 +83,6 @@ before_script:
   - php artisan key:generate
   #- npm install - if you want to use gulp/elixir
 
-
 script:
   # Run them tests, y'all
   #- gulp # if you are running 'npm install' in before_script
@@ -105,7 +96,6 @@ Back in terminal, run:
 - `git commit -m "initial commit"`
 - `git push -u origin master`
 
-Go to travis-ci.org, synch your repositories, and turn this one on!
+#### Go to travis-ci.org, synch your repositories, and turn this one on!
 
-### Next up: How to BDD!
 
