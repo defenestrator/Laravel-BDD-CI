@@ -117,8 +117,9 @@ Back in terminal, run:
 - `git push -u origin master`
 
 #### Or
-- clone this repo
+- you could clone/fork this repository.
 
+### Then:
 #### Go to [Travis-CI](https://travis-ci.org), synch your repositories, and turn this one on!
 
 
