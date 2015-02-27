@@ -6,7 +6,8 @@
 
 I'm assuming you have a github account and a [Travis-CI](https://travis-ci.org) account linked to it.
 
-Given that, it is safe to assume you have PHP 5.4 or higher, and know more or less how to configure your local development environment, and have installed Composer:
+Given that, it is safe to assume you know more or less how to configure your local development environment. 
+Perhaps you've even installed Composer:
 
 `curl -sS https://getcomposer.org/installer | php`
 
@@ -14,7 +15,7 @@ Given that, it is safe to assume you have PHP 5.4 or higher, and know more or le
 
 `composer global require "laravel/installer=~1.1"`
 
-**I recommend [Laravel Homestead](http://laravel.com/docs/5.0/homestead) for local use with this configuration.**
+**I strongly recommend using [Laravel Homestead](http://laravel.com/docs/5.0/homestead) for your local development.**
 
 Now...breathe deeply and proceed.
 
