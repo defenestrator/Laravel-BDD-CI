@@ -55,7 +55,7 @@ Again in the terminal:
 - `vendor/bin/behat --init`
 - `git add .`
 
-Then, edit config/database.php so that:
+Edit `config/database.php` so that:
 - `'default' => 'mysql',` becomes `'default' => env('DB_TYPE', 'sqlite')`
 - and `'database' => storage_path().'/database.sqlite',` says `'database' => storage_path(env('SQLITE_DB', 'database.sqlite')),`
 - Now add `DB_TYPE=mysql` to `.env`
@@ -75,7 +75,7 @@ SESSION_DRIVER=file
 Then in Terminal:
 `cp .env.behat .env.behat.travis`
 
-Then add this to your behat.yml:
+Add this to your behat.yml:
 
 ```yaml
 default:
@@ -116,7 +116,7 @@ script:
   - vendor/bin/behat --config behat.yml
 ```
 
-Back in terminal, run:
+Now run:
 - `git remote add origin https://github.com/your-username/repo-name.git`
 - `git commit -m "initial commit"`
 - `git push -u origin master`
