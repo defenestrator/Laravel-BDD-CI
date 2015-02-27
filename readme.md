@@ -16,7 +16,7 @@ Given that, it is safe to assume you have PHP 5.4 or higher, and know more or le
 
 **I recommend [Laravel Homestead](http://laravel.com/docs/5.0/homestead) for local use with this configuration.**
 
-Now...breathe deep and proceed.
+Now...breathe deeply and proceed.
 
 ### How to build it
 
