@@ -22,7 +22,7 @@ Now...breathe deeply and proceed.
 
 #### Either
 
-- you could clone/fork this repository, sync your repos with travis-ci and activate it.
+You _could_ clone/fork this repository, sync your repos with travis-ci and activate it.
 
 #### Or
 
