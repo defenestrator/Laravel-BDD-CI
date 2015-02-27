@@ -27,6 +27,8 @@ You will also need [Git](http://git-scm.com/downloads) installed locally, I hope
 Microsoft Corporation's Windows Operating System&trade;. 
 Here's a bonus Windows [*ProTip*](https://www.udacity.com/wiki/ud775/git-bash-copy-paste); lest you think I dislike you.
 
+Travis-CI is free for *public* repositories. Private repositories must pay, though services that support private 
+repos at no charge do [exist](https://circleci.com/).
 
 Now...breathe deeply and proceed.
 
@@ -156,5 +158,11 @@ Now run:
 
 You have now configured PHPUnit, PhpSpec, Behat, and Travis-CI for use with your Laravel application. 
 This configuration will also allow different environments to remain de-coupled from a specific RDBMS 
-through the addition of `DB_TYPE` and `SQLITE_DB` `.env` variables.
+through the addition of `DB_TYPE` and `SQLITE_DB` `.env` variables. Perhaps more importantly, you are now fully-equipped 
+to do Story and Spec BDD, and you have automated Continuous Integration via Travis-CI.
+
+Next; filling in the blanks with practice tests. Also, I may add support for [circle-ci](https://circleci.com/) 
+and similar services soon. 
+
+
 
