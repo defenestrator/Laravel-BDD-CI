@@ -97,12 +97,12 @@ default:
 
 Edit `.travis.yml` to read:
 
+
 ```yaml
 language: php
 php:
   - 5.6
 sudo: false
-
 before_script:
   # setup mysql (to test production) , and sqlite (for behat acceptance)
   # update composer,
@@ -116,13 +116,30 @@ before_script:
   - composer install --prefer-source
   - php artisan key:generate
   #- npm install - if you want to use gulp/elixir
-
 script:
   # Run them tests, y'all
   #- gulp # if you are running 'npm install' in before_script
   - phpunit tests/
   - vendor/bin/phpspec run -v
   - vendor/bin/behat --config behat.yml
+```
+
+Configure phpec.yml like so:
+```yaml
+suites:
+    main:
+        namespace: App
+        psr4_prefix: App
+        src_path: app
+        spec_prefix: spec
+```
+
+Add four *use* lines to `features/bootstrap/FeatureContext.php` :
+```php
+use Behat\MinkExtension\Context\MinkContext;
+use Laracasts\Behat\Context\Migrator;
+use \Laracasts\Behat\Context\DatabaseTransactions;
+use PHPUnit_Framework_Assert as PHPUnit;
 ```
 
 Now run:
