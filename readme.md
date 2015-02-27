@@ -15,9 +15,12 @@ Perhaps you've even installed Composer:
 
 `composer global require "laravel/installer=~1.1"`
 
+This tutorial will not cover configuring your local development environment, though the steps listed here should not 
+impede any choice you may make in that regard.
+ 
 **I strongly recommend using [Laravel Homestead](http://laravel.com/docs/5.0/homestead) for your local development.**
 
-You will also need [Git](http://git-scm.com/downloads) installed. 
+You will also need [Git](http://git-scm.com/downloads) installed locally, I hope that's obvious at this point. 
 
 *Windows users please note:* I'm not going to re-write the whole article just for you, therefore I also recommend 
 [Git Bash](https://github.com/msysgit/msysgit/releases) so you can enter shell commands in a sane manner whilst running 
@@ -151,4 +154,7 @@ Now run:
 ### Finally:
 #### Go to [Travis-CI](https://travis-ci.org), synchronize your repositories, and turn this one on!
 
+You have now configured PHPUnit, PhpSpec, Behat, and Travis-CI for use with your Laravel application. 
+This configuration will also allow different environments to remain de-coupled from a specific RDBMS 
+through the addition of `DB_TYPE` and `SQLITE_DB` `.env` variables.
 
