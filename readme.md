@@ -152,17 +152,12 @@ Now run:
 - `git commit -m "initial commit"`
 - `git push -u origin master`
 
-
-### Finally:
-#### Go to [Travis-CI](https://travis-ci.org), synchronize your repositories, and turn this one on!
+#### Finally:
+**Go to [Travis-CI](https://travis-ci.org), synchronize your repositories, and turn this one on!**
 
 You have now configured PHPUnit, PhpSpec, Behat, and Travis-CI for use with your Laravel application. 
 This configuration will also allow different environments to remain de-coupled from a specific RDBMS 
 through the addition of `DB_TYPE` and `SQLITE_DB` `.env` variables. Perhaps more importantly, you are now fully-equipped 
 to do Story and Spec BDD, and you have automated Continuous Integration via Travis-CI.
 
-Next; filling in the blanks with practice tests. Also, I may add support for [circle-ci](https://circleci.com/) 
-and similar services soon. 
-
-
-
+Next; **filling in the blanks with practice tests.** 
