@@ -22,6 +22,10 @@ Now...breathe deeply and proceed.
 
 #### Either
 
+- you could clone/fork this repository, sync your repos with travis-ci and activate it.
+
+#### Or
+
 In terminal:
 - install Laravel ~5.0.1 `laravel new blog`
 - `cd blog`
@@ -46,12 +50,12 @@ Additionally edit your `"require-dev":` to look like this:
   },
   ```
 
-Again in terminal:    
+Again in the terminal:    
 - `composer install`
 - `vendor/bin/behat --init`
 - `git add .`
 
-Then edit config/database.php so that:
+Then, edit config/database.php so that:
 - `'default' => 'mysql',` becomes `'default' => env('DB_TYPE', 'sqlite')`
 - and `'database' => storage_path().'/database.sqlite',` says `'database' => storage_path(env('SQLITE_DB', 'database.sqlite')),`
 - add `DB_TYPE=mysql` to `.env`
@@ -81,7 +85,7 @@ default:
       laravel: ~
 ```
 
-- Finally, edit `.travis.yml` to read:
+Edit `.travis.yml` to read:
 
 ```yaml
 language: php
@@ -116,10 +120,8 @@ Back in terminal, run:
 - `git commit -m "initial commit"`
 - `git push -u origin master`
 
-#### Or
-- you could clone/fork this repository.
 
-### Then:
-#### Go to [Travis-CI](https://travis-ci.org), synch your repositories, and turn this one on!
+### Finally:
+#### Go to [Travis-CI](https://travis-ci.org), synchronize your repositories, and turn this one on!
 
 
