@@ -17,6 +17,14 @@ Perhaps you've even installed Composer:
 
 **I strongly recommend using [Laravel Homestead](http://laravel.com/docs/5.0/homestead) for your local development.**
 
+You will also need [Git](http://git-scm.com/downloads) installed. 
+
+*Windows users please note:* I'm not going to re-write the whole article just for you, therefore I also recommend 
+[Git Bash](https://github.com/msysgit/msysgit/releases) so you can enter shell commands in a sane manner whilst running 
+Microsoft Corporation's Windows Operating System&trade;. 
+Here's a bonus Windows [*ProTip*](https://www.udacity.com/wiki/ud775/git-bash-copy-paste); lest you think I dislike you.
+
+
 Now...breathe deeply and proceed.
 
 ### How to build it
