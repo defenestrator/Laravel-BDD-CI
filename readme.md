@@ -58,7 +58,7 @@ Again in the terminal:
 Then, edit config/database.php so that:
 - `'default' => 'mysql',` becomes `'default' => env('DB_TYPE', 'sqlite')`
 - and `'database' => storage_path().'/database.sqlite',` says `'database' => storage_path(env('SQLITE_DB', 'database.sqlite')),`
-- add `DB_TYPE=mysql` to `.env`
+- Now add `DB_TYPE=mysql` to `.env`
 - `.env.behat` will be excluded from git, if you used my .gitignore, and you should add to it:
 
 ```
@@ -72,9 +72,10 @@ CACHE_DRIVER=file
 SESSION_DRIVER=file
 ```
 
-Terminal:
-- `cp .env.behat .env.behat.travis`
-- add this to your behat.yml:
+Then in Terminal:
+`cp .env.behat .env.behat.travis`
+
+Then add this to your behat.yml:
 
 ```yaml
 default:
